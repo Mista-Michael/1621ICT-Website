@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-container {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-box {
+    margin: 20px 10px;
+}
+
+.bttn {
+    margin: 10px 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.2s ease-out, color 0.3s ease-out;
+    border: none;
+}
+
+.bttn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/*------------Header----------------*/
+
+#site-header {
+    width: 100%;
+    height: 65px;
+    background-color: #000000;
+}
+
+#header-container {
+    margin: 0 auto;
+    width: 95%;
+}
+
+#saltburger-logo, #saltburger-logo-nav {
+    width: 250px;
+    margin: 0;
+}
+
+#saltburger-logo img, #saltburger-logo-nav img {
+    margin-top: 6px;
+    left: 0;
+    height: 55px;
+}
+
+#site-nav {
+    margin: 1.2em 0;
+    float: right;
+}
+
+#site-nav ul {
+    display: flex;
+}
+
+#site-nav ul li {
+    margin-left: 10px;
+}
+
+#site-nav ul li a {
+    font-size: 20px;
+    padding: 18.5px 16px 21.35px;
+    color: #fff;
+    transition: color 0.3s ease-out;
+}
+
+#site-nav ul li a:hover {
+    color: black;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/*----------------Hamburger Menu----------------*/
+
+#site-ham-nav {
+    text-align: right;
+    height: calc(100vh + 65px);
+    line-height: 50px;
+    display: none;
+}
+
+#site-ham-nav-menu {
+    margin: 0 30px 0 0;
+    background-color: #000;
+}
+
+#site-ham-nav-menu a {
+    color: #000;
+    margin: 0 10px;
+    line-height: 130px;
+    clear: both;
+}
+
+#site-ham-nav label {
+    margin: 0 5px 0 0;
+    color: #fff;
+    font-size: 50px;
+    line-height: 70px;
+    display: none;
+    width: 35px;
+    position: relative;
+    top: -65px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/*----------------Index.html----------------*/
+
+#index-banner {
+    background-image: linear-gradient(transparent, black), url('../images/index_images/burgers-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+#index-info {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+}
+
+#index-info h3 {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+}
+
+#index-info-quotes {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#index-info-quotes p {
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+
+#index-info-star {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#index-info-star img {
+    padding-bottom: 20px;
+    border-bottom-style: double;
+    border-bottom-color: #fff;
+}
+
+#events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*----------------Menu.html----------------*/
+.menu-banner {
+    background-image: url("../images/menu_images/Burger-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+#menu-banner-text h3 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 4px 4px #000;
+    margin-left: 30px;
+    padding-top: 50px;
+}
+
+#menu-banner-text p {
+    margin-left: 30px;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px #000;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu-box {
+    margin: 100px 20px;
+}
+
+.menu-item-text {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/*-----------------Store.html------------------*/
+#store-banner {
+    background-image: url('../images/store_images/map-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+#store-info {
+    width: 725px;
+    line-height: 20px;
+}
+
+#store-info h3 {
+    padding-bottom: 10px;
+}
+
+#store-info p {
+    margin-bottom: 10px;
+}
+
+/*-----------------About.html------------------*/
+
+#about-banner {
+    background-image: url('../images/about_images/store-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+#about-info {
+    width: 725px;
+    line-height: 20px;
+}
+
+#about-info h3 {
+    padding-bottom: 10px;
+}
+
+#about-bttn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    border: none;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#about-bttn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+
+/*-----------------Contact.html------------------*/
+
+#contact-content-left {
+    background-color: grey;
+    width: 300px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+#contact-image {
+    width: 95%;
+}
+
+#contact-header {
+    margin: 0 0 10px 10px;
+}
+
+#contact-social-icons img:hover {
+    filter: brightness(0%)
+}
+
+/*
+---Form---
+*/
+#contact-content-right {
+    width: 900px;
+}
+
+#contact-content-right p {
+    margin: 5px 10px 10px;
+}
+
+#contact-validation-text {
+    margin: 0 10px 0px;
+    font-size: 9px;
+}
+
+.astericks {
+    color: #b10000
+}
+
+.contact-name {
+    margin: 0 10px;
+    display: inline;
+}
+
+.contact-name input {
+    width: 37%;
+}
+
+fieldset {
+    margin: 10px 0;
+    border: none;
+}
+
+#selection-field {
+    margin-bottom: 30px;
+}
+
+#issue-header {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#service,
+#food,
+#other {
+    margin-bottom: 10px;
+}
+
+#selection-field label {
+    margin-left: 10px;
+}
+
+.contact-input {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.contact-input input {
+    width: calc(100% - 15px);
+}
+
+.contact-input textarea {
+    width: calc(100% - 15px);
+    resize: vertical;
+}
+
+#submit-bttn {
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.2s ease-out, color 0.3s ease-out;
+    border: none;
+}
+
+#submit-bttn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/*-------------------------------Contact-form.php-------------------------------*/
+
+#contact-form-banner {
+    background-image: url('../images/contact_images/thank-you-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+#thanks h4 {
+    margin-bottom: 20px;
+}
+
+#contact-form-bttn {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.2s ease-out, color 0.3s ease-out;
+    border: none;
+}
+
+/*-------------------------------Submission.php-------------------------------*/
+#submission-table {
+    margin: 10px auto;
+}
+
+tr,
+td {
+    border: 1px solid #000;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+#submission-table tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+/*-------------------------------Privacy.html-------------------------------*/
+
+#privacy-info {
+    line-height: 25px;
+}
+
+#privacy-info h4 {
+    margin: 20px 0 10px;
+}
+
+/*-------------------------------Terms.html-------------------------------*/
+
+#terms-info {
+    line-height: 25px;
+}
+
+#terms-info h2 {
+    margin-bottom: 20px;
+}
+
+
+/*-------------------------------Footer-------------------------------*/
+
+#site-footer {
+    background-color: #000000;
+    width: 100%;
+    font-size: 12px;
+}
+
+#footer-container {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 95%;
+}
+
+#foot-top {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-style: double;
+    color: #ffffff;
+}
+
+#foot-logo h5 {
+    font-size: 24px;
+}
+
+.foot-box {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    margin-right: auto;
+}
+
+.foot-box h5 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.foot-box ul li {
+    margin-bottom: 5px;
+}
+
+.foot-box ul li a {
+    color: grey;
+}
+
+.foot-box ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#social-box h5 {
+    margin: 40px 0 10px 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.social-icons ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.social-icons img {
+    margin: 0 5px;
+}
+
+.social-icons img:hover {
+    filter: brightness(50%);
+}
+
+#foot-bot {
+    color: #ffffff;
+    margin-top: 10px;
+}

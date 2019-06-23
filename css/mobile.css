@@ -1,0 +1,96 @@
+
+/*---------------Mobile Style---------------*/
+
+@media only screen and (max-width: 728px) {
+    #header-container {
+        width: 100%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #saltburger-logo-nav {
+        margin-left: 0em;
+        display: block;
+    }
+
+    /*-----ham nav-----*/
+    #site-ham-nav {
+        display: block;
+        position: relative;
+    }
+
+    #site-ham-nav label {
+        display: block;
+        padding-right: 5px;
+    }
+
+    #site-ham-nav-menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    #site-ham-nav-menu a {
+        display: block;
+        color: #fff;
+        margin: 0;
+    }
+
+    #toggle:checked + #site-ham-nav-menu {
+        display: block;
+    }
+
+    #foot-logo {
+        display: none;
+    }
+
+    #contact-content-left {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .page-container {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .index-event {
+        width: 300px;
+    }
+
+    /*----Contact.html---*/
+    .contact-name {
+        margin: 10px 10px;
+        display: block;
+    }
+
+    .contact-name input {
+        margin: 5px 0;
+        width: calc(100% - 5px);
+    }
+
+    /*----------------Menu.html----------------*/
+
+    .menu-box {
+        margin: 20px 0;
+    }
+
+    .menu-box img {
+        width: 304px;
+    }
+
+    /*----------------Footer----------------*/
+
+    #saltburger-logo {
+        margin-left: 0em;
+        display: none;
+    }
+
+    #foot-top {
+        display: block;
+    }
+}
